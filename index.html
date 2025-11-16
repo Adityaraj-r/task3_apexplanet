@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Advanced Styling — Neon Glow (AC + Weather Fix)</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+<div class="app">
+  <header class="topbar">
+    <h1>Advanced Styling & JavaScript — Neon Glow (Final Edition)</h1>
+    <div class="top-actions">
+      <button id="themeToggle" class="icon-btn">🌓</button>
+      <button id="locWeather" class="btn">Use My Location</button>
+    </div>
+  </header>
+
+  <nav class="nav">
+    <a href="#quiz">Quiz</a>
+    <a href="#weather">Weather</a>
+    <a href="#carousel">Carousel</a>
+  </nav>
+
+  <main>
+
+    <!-- QUIZ -->
+    <section id="quiz" class="card section">
+      <div class="section-head">
+        <h2>Quiz</h2>
+        <div id="scoreWrap">
+          <div>Score</div>
+          <div id="score">0</div>
+        </div>
+      </div>
+
+      <div id="quiz-box" class="quiz-box"></div>
+      <button id="nextQ" class="btn">Next Question</button>
+    </section>
+
+    <!-- WEATHER -->
+    <section id="weather" class="card section">
+      <h2>Weather (City + State Supported)</h2>
+      <div class="weather-row">
+        <input id="city" placeholder="Enter city or state">
+        <button id="getWeatherBtn" class="btn">Get Weather</button>
+      </div>
+      <div id="weather-result" class="weather-result"></div>
+    </section>
+
+    <!-- CAROUSEL -->
+    <section id="carousel" class="card section">
+      <h2>Image Carousel</h2>
+      <div class="carousel-frame">
+        <img id="cimg" alt="carousel">
+      </div>
+    </section>
+
+  </main>
+
+  <div id="loader" class="loader hidden"></div>
+
+  <footer class="footer">Built with ❤️ — Neon Glow Final Edition</footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
